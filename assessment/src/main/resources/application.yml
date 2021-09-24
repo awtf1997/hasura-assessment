@@ -1,0 +1,15 @@
+server:
+  port: 9091
+  
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://db-server.cqe7y515ypyw.us-east-1.rds.amazonaws.com:3306/chinook?allowPublicKeyRetrieval=true&useSSL=false
+    username: admin
+    password: hasuraAWS
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: true  
+    
