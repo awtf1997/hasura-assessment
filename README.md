@@ -22,12 +22,12 @@ Deployment of the application has been done using AWS S3. To deploy the applicat
 2) Create a new bucket on AWS S3. Allow public access to the bucket. 
 3) Upload the jar file to the bucket and make it public.
 4) Copy the link from the bucket associated with the jar.
-SSH into the ec2 instance and run : "wget <s3-link>"
-5) Once the jar is downloaded, run : "java -jar <jar-name>"
+SSH into the ec2 instance and run : wget "s3-link"
+5) Once the jar is downloaded, run : java -jar "jar-name"
 
 Accessing the application =>
 To access the application, the swagger endpoint can be used.
-If the application is hosted on a separate EC2 instance, the application can be accessed by modifying the modifying the url as "http://<public dns of the ec2 instance>:9091/swagger-ui/"
+If the application is hosted on a separate EC2 instance, the application can be accessed by modifying the modifying the url as "http://'public dns of the ec2 instance':9091/swagger-ui/"
 
 Using a separate database =>
 The database used here is a mysql database hosted on amazon rds. If a separate database needs to be used, then
