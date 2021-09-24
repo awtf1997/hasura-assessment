@@ -14,7 +14,7 @@ Basic Functionalities of the application:
 4) DELETE -> to delete the albums along with their artist information from the database. Album id can be provided but not mandatory. Upon providing album id, only the specific album will be deleted, else all the albums will 	be deleted.
 
 Application has been hosted on an AWS EC2 instance.
-All the api endpoints can be accessed through the swagger link => http://ec2-54-152-55-119.compute-1.amazonaws.com/swagger-ui/
+All the api endpoints can be accessed through the swagger link => http://ec2-54-152-55-119.compute-1.amazonaws.com:9091/swagger-ui/
 
 Deploying the application =>
 Deployment of the application has been done using AWS S3. To deploy the application, 
@@ -27,7 +27,7 @@ SSH into the ec2 instance and run : "wget <s3-link>"
 
 Accessing the application =>
 To access the application, the swagger endpoint can be used.
-If the application is hosted on a separate EC2 instance, the application can be accessed by modifying the modifying the url as http://<public dns of the ec2 instance>/swagger-ui/
+If the application is hosted on a separate EC2 instance, the application can be accessed by modifying the modifying the url as "http://<public dns of the ec2 instance>:9091/swagger-ui/"
 
 Using a separate database =>
 The database used here is a mysql database hosted on amazon rds. If a separate database needs to be used, then
